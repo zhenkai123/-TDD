@@ -1,21 +1,22 @@
-from selenium import webdriver          #(1)
+from selenium import webdriver          # (1)
 import unittest
 
+class NewVisitorTest(unittest.TestCase): #
 
-class NewVisiotorTest(unittest.TestCase): #(1)
-    def sutUp(self):    #(3)
-        self.browser=webdriver.Firefox() 
+    def setUp(self): # (3)
+        self.browser = webdriver.Firefox()
 
     def tearDown(self): #(3)
         self.browser.quit()
 
-    def test_can_start_a_list_and_retrieve_it_later(self):
-        #Edith has heard about a cool new online to-do app. She goes
-        #to check out its homepage
-        self.brower.get('http://localhost:8000')
-        #She notices the page title and header mention to-do lists
-        self.assertIn('TO-DO',self.browser.title)
-        self.fail('Finish the test')
+    def test_can_start_a_list_and_retrieve_it_later(self): # (2)
+    # Edith has heard about a cool new online to-do app. She goesto check out its homepage
+        self.browser.get('http://localhost:8000')
+    # She notices the page title and header mention to-do lists
+        self.assertIn( 'To-Do', self.browser.title)
+    #(4）
+        self.fail('Finish the test!')
+    # C5
 
-if __name__=='__main__':
-    unittest.main(warnings='ignore')
+if __name__ == '__main__':  # (6)
+    unittest.main(warnings='ignore')  # (7)
