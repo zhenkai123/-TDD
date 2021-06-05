@@ -4,12 +4,17 @@ from selenium.webdriver.common.keys import Keys
 import time
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium.common.exceptions import WebDriverException
+import os
 MAX_WAIT = 10
-
+STAGING_SERVER='82.156.214.44'
 class NewVisitorTest(StaticLiveServerTestCase): #(1)
 
  def setUp(self): #(3)
      self.browser = webdriver.Firefox()
+     staging_server=STAGING_SERVER
+     if staging_server:
+         self.live_server_url ='http://' + staging_server
+     
  def tearDown(self): #(3)
      self.browser.quit()
  def check_for_row_in_list_table(self,row_text):
