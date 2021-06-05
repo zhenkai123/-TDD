@@ -4381,3 +4381,30 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1622894538711	Marionette	WARN	TLS certificate errors will be ignored for this session
 1622894539404	Marionette	INFO	Stopped listening on port 54458
 console.warn: services.settings: main/cfr-fxa sync interrupted by shutdown
+1622902191407	geckodriver	INFO	Listening on 127.0.0.1:49937
+1622902191908	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileRIqSRF"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622902196389	Marionette	INFO	Listening on port 49944
+1622902196589	Marionette	WARN	TLS certificate errors will be ignored for this session
+1622902198775	Marionette	INFO	Stopped listening on port 49944
+console.error: services.settings: 
+  main/cfr Signature failed  TypeError: NetworkError when attempting to fetch resource.
+1622902199699	geckodriver	INFO	Listening on 127.0.0.1:50026
+1622902200255	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileMSnRqK"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622902204616	Marionette	INFO	Listening on port 50033
+1622902204665	Marionette	WARN	TLS certificate errors will be ignored for this session
+1622902206289	Marionette	INFO	Stopped listening on port 50033
+console.error: services.settings: 
+  main/cfr-fxa Signature failed  TypeError: NetworkError when attempting to fetch resource.
+1622902207114	geckodriver	INFO	Listening on 127.0.0.1:50113
+1622902207659	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileKYmX3J"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1622902212024	Marionette	INFO	Listening on port 50118
+1622902212049	Marionette	WARN	TLS certificate errors will be ignored for this session
+1622902213453	Marionette	INFO	Stopped listening on port 50118
+console.error: services.settings: 
+  main/fxmonitor-breaches Signature failed  TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
