@@ -1,0 +1,12 @@
+[Unit]
+Description=Gunicorn server for 82.156.214.44
+
+[Service]
+Restart=on-failure
+User=lighthouse
+WorkingDirectory=/home/lighthouse/sites/82.156.214.44/source
+ExecStart=/home/lighthouse/sites/82.156.214.44/virtualenv/bin/gunicorn \
+--bind unix:/tmp/82.156.214.44.socket suplerlists.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
